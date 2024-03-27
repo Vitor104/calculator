@@ -12,7 +12,10 @@ function calculate() {
 }
 
 
-function visor(num) {
-   let append = document.getElementById('display').value;
-   return append.innerHTML = num;
+function visor(num1, num2) {
+   let disp = document.getElementById('display').innerText = num1num2;
+   let divisao = document.getElementById('divisao');
+   if(divisao) {
+
+   }
 }
