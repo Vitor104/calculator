@@ -1,21 +1,20 @@
 
 
+const display = document.getElementById('display');
 
 function apagar() {
-    let displayvisor = document.getElementById("display").innerHTML = 0;
+    display.value = '';
+}
+
+function appendToDisplay(num) {
+    display.value += num;
 }
 
 function calculate() {
-        let expression = document.getElementById('display').value;
-        let result = eval(expression);
-        document.getElementById('display').value = result;
-}
-
-
-function visor(num1, num2) {
-   let disp = document.getElementById('display').innerText = num1num2;
-   let divisao = document.getElementById('divisao');
-   if(divisao) {
-
-   }
+    try {
+        display.value = eval(display.value);
+    } 
+    catch(error) {
+        display.value = 'Error';
+    }
 }

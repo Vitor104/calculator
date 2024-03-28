@@ -12,82 +12,27 @@
     </header>
 
     <main id="container">
-        <div id="display">
-            0
-        </div>
+        <input id="display" readonly></input>
 
-        <div id="second-container">
+        <div id="buttons-container">
 
-            <section class="buttons-container">
-                <div class="buttom" onclick="apagar()">
-                    <p>C</p>
-                </div>
-                <div class="buttom">
-                    <p>( )</p>
-                </div>
-                <div class="buttom">
-                    <p>%</p>
-                </div>
-                <div class="buttom" id="divisao" value="/" onclick="visor()">
-                    <p>/</p>
-                </div>
-            </section>
-            <section class="buttons-container">
-                <div class="buttom" value="7" onclick="visor(7)">
-                    <p>7</p>
-                </div>
-                <div class="buttom" value="8" onclick="visor(8)">
-                    <p>8</p>
-                </div>
-                <div class="buttom" value="9" onclick="visor(9)">
-                    <p>9</p>
-                </div>
-                <div class="buttom" value="*" onclick="multiplicacao()">
-                    <p>x</p>
-                </div>
-            </section>
-            <section class="buttons-container">
-                <div class="buttom" value="4" onclick="visor(4)">
-                    <p>4</p>
-                </div>
-                <div class="buttom" value="5" onclick="visor(5)">
-                    <p>5</p>
-                </div>
-                <div class="buttom" value="6" onclick="visor(6)">
-                    <p>6</p>
-                </div>
-                <div class="buttom" value="-">
-                    <p>-</p>
-                </div>
-            </section>
-            <section class="buttons-container">
-                <div class="buttom" value="1" onclick="visor(1)">
-                    <p>1</p>
-                </div>
-                <div class="buttom" value="2" onclick="visor(2)">
-                    <p>2</p>
-                </div>
-                <div class="buttom" value="3" onclick="visor(3)">
-                    <p>3</p>
-                </div>
-                <div class="buttom" value="+">
-                    <p>+</p>
-                </div>
-            </section>
-            <section class="buttons-container">
-                <div class="buttom">
-                    <p>+/-</p>
-                </div>
-                <div class="buttom" value="0" onclick="visor(0)">
-                    <p>0</p>
-                </div>
-                <div class="buttom" value=",">
-                    <p>,</p>
-                </div>
-                <div class="buttom" onclick="calculate()">
-                    <p>=</p>
-                </div>
-            </section>
+            <button class="sinais" onclick="appendToDisplay('+')">+</button>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button class="sinais" onclick="appendToDisplay('-')">-</button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button class="sinais" onclick="appendToDisplay('*')">*</button>
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button class="sinais" onclick="appendToDisplay('/')">/</button>
+            <button class="sinais" onclick="appendToDisplay('.')">.</button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button class="clearandresult" onclick="calculate()">=</button>
+            <button class="clearandresult" onclick="apagar()">C</button>
 
         </div>
     </main>
