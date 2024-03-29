@@ -6,7 +6,7 @@
 
 body {
     background-image: linear-gradient(to bottom right, #392865, #50617f, #1199D9);
-    height: 45em;
+    height: 65em;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -19,7 +19,7 @@ body {
 
 main {
     height: 35em;
-    width: 90%;
+    width: 18em;
     background-color: rgb(0, 0, 0);
     border-radius: 50px;
     display: flex;
@@ -53,10 +53,9 @@ main > #buttons-container {
 main > #buttons-container > button {
     height: 5em;
     width: 5em;
-    border-radius: 10px;
+    border-radius: 50%;
     border: 1px solid black;
     background-color: darkgray;
-    font-size: 0.8rem;
 }
 
 main > #buttons-container > .sinais {
@@ -65,4 +64,30 @@ main > #buttons-container > .sinais {
 
 main > #buttons-container > .clearandresult {
     background-color: dimgrey;
+}
+
+main > #buttons-container > button > p {
+    font-size: 20px;
+}
+
+/* MEDIA QUERY  */
+
+@media only screen and (min-width: 1400px) {
+    main {
+        height: 40em;
+        width: 20em;
+    }
+
+    main > #buttons-container > button > p {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 2500px) {
+    body {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    
 }
